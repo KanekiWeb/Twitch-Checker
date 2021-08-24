@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0d0d0f;
+    font-family: 'Inter',Roobert,Helvetica Neue,Helvetica,Arial, sans-serif;
+    font-weight: inherit;
+}
+
+header nav {
+    background-color: #18181b;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+header nav ul .nav_links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul li a {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s all;
+    border-radius: 7px;
+    padding: 10px 15px;
+}
+
+header nav ul li:not(:nth-child(3)) {
+    margin-right: 20%;
+}
+
+header nav ul li:hover a {
+    background-color: #2e2e30c5;
+    transition: 0.3s all;
+}
+
+header nav ul .logo img {
+    width: 50px;
+}
+
+footer {
+    color: #ccc;
+    font-size: 12px;
+    justify-content: center;
+    display: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 1.2%;
+    margin-top: 4%;
+}
+
+footer a {
+    color: #e20d1f;
+    margin-left: 5px;
+}
+
+.checker .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+}
+
+.checker .center textarea {
+    display: flex;
+    position:relative;
+    background-color: #2e2e30c5;
+    border: none;
+    resize: none;
+    border-radius: 7px;
+    width: 60%;
+    height: 300px;
+    outline: none;
+    color: #ccc;
+    padding: 20px;
+}
+
+.checker .center button {
+    margin-top: 20px;
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    text-decoration: none;
+    background-color: #262628;
+    color: #ccc;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.checker .center button:hover {
+    background-color: #414147;
+    transition: 0.3s all;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.results{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1387px) {
+    .results{
+        color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.results .results-box {
+    width: 40vh;
+    margin-top: 5%;
+}
+
+.results .results-box:not(:nth-child(4)) {
+    margin-right: 20px;
+}
+
+.results .results-box .title {
+    padding: 12px 0 10px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.results .valid .title{
+    background-color: #00BC8C;
+}
+
+.results .invalid .title{
+    background-color: #E74C3C;
+}
+
+.results .unknow .title{
+    background-color: #F39C12;
+}
+
+.results .results-box .valid{
+    border: 1px solid #00BC8C; 
+}
+
+.results .results-box .invalid{
+    border: 1px solid #E74C3C; 
+}
+
+.results .results-box .unknow{
+    border: 1px solid #F39C12; 
+}
+
+.results .results-box .body .token-checked {
+    padding: 10px 0 5px 10px;
+    background-color: #303030;
+    font-size: 9px;
+    font-family: 'Consolas', sans-serif;
+}
+
+.results .results-box .body .token-checked-invalid {
+    border: 1px solid #E74C3C;
+}
+
+.results .results-box .body .token-checked-valid {
+    border: 1px solid #00BC8C;
+}
+
+.results .results-box .body .token-checked-unknow {
+    border: 1px solid #F39C12;
+}
+
+.fas {
+    margin-right: 5px;
+}
+
+.checked-count-invalid {
+    background-color: white;
+    color: #FF4754;
+    border-radius: 20%;
+    padding: 2px 3.5px;
+    margin-left: 3px
+}
+
+.checked-count-valid {
+    background-color: white;
+    color: #00BC8C;
+    border-radius: 20%;
+    padding: 2px 3.5px;
+    margin-left: 3px
+}
+
+.checked-count-unknow {
+    background-color: white;
+    color: #F39C12;
+    border-radius: 20%;
+    padding: 2px 3.5px;
+    margin-left: 3px
+}
+
+.checker .text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: center;
+    margin-top: 50px;
+}
+
+.checker .text p {
+    margin-top: 6px;
+}
