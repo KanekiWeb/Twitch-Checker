@@ -34,7 +34,7 @@ All suggestions are welcome.
 
 ## 📜 License & Warning
 Twitch-Checker is make for education propose only<br>
-Twitch-Checker is under is under licensed MIT [MIT License](https://github.com/KanekiWeb/Twitch-Checker/blob/master/LICENSE).
+Twitch-Checker is under licensed MIT [MIT License](https://github.com/KanekiWeb/Twitch-Checker/blob/master/LICENSE).
 
 
 <p align="center">
